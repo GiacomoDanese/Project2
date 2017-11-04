@@ -1,5 +1,8 @@
+
 module.exports = function(sequelize, DataTypes) {
+
   var Components = sequelize.define("Components", {
+
     item_name: {
       type: DataTypes.STRING,
       allowNull: false
