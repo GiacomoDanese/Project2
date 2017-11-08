@@ -1,233 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Project Name</title>
-</head>
-  <meta charset="UTF-8">
-  
-  <!-- //Latest compiled and minified CS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<body>
 
-  <!-- Navigation -->
-    <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Sell Computer</a></li>
-      <li><a href="#">Search Parts</a></li>
-      <li><a href="#">Build Computer</a></li>
-    </ul>
-  </div>
-</nav>
 
-    <div class="container content-container">
-      <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <a class="pre-set" id="tier1">
-            <div class="item-image">
-              <img id="preset-img" src="https://www.webantics.com/content/images/thumbs/004/0042794_lenovo-thinkcentre-s500-i3-4170-small-form-factor-desktop-pc-with-195-monitor_600.png" alt="tier 1"> 
-            </div>
+                <ul>
+                    {{#each stuff}}
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-minus-sign">
+                            </span>
+                        </a>
+                        <p>{{item_type}}</p>
+                        <p>{{item_name}}</p>
+                        <a href="#">
+                            <img class="comp-img" src={{item_img}}>
+                        </a>
+                        <p>{{item_price}}</p>
+
+                        <a href="#">
+                            <span class="glyphicon glyphicon-plus-sign">
+                            </span>
+                        </a></li> 
+                        {{/each}}
+                </ul>      
+              
+
             
-          </a>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <a class="pre-set" id="tier2">
-            <div class="item-image">
-              <img id="preset-img" src="http://cyberpowergamingpc.com/wp-content/uploads/2016/07/blk_win10_400-1.png" alt="tier 2"> 
-            </div>
-            
-          </a>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <a class="pre-set" id="tier3">
-            <div class="item-image">
-              <img id="preset-img" src="https://www.cyberpowerpc.com/images/cs/inwin303/wht_220.png" alt="tier 3"> 
-            </div>
-            
-          </a>
-        </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <a class="pre-set" id="tier4">
-            <div class="item-image">
-              <img id="preset-img" src="http://media.bestofmicro.com/U/X/461193/gallery/12_w_600.png" alt="tier 4"> 
-            </div>
-            
-          </a>
-        </div>
-      </div>
-
-        <br>
-
-        <div class="container components-conatiner">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-minus-sign">
-                        </span>
-                    </a>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <p>{{item_type}}</p>
-                    <p>{{item_name}}</p>
-                    <a href="#">
-                        <img class="comp-img" src={{item_img}}>
-                    </a>
-                    <p>{{item_price}}</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-plus-sign">
-                        </span>
-                    </a>    
-                </div>    
-            </div>
-
-            <br>
-
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-minus-sign">
-                        </span>
-                    </a>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <p>{{item_type}}</p>
-                    <p>{{item_name}}</p>
-                    <a href="#">
-                        <img class="comp-img" src={{item_img}}>
-                    </a>
-                    <p>{{item_price}}</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-plus-sign">
-                        </span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-
-            <br>
-
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-minus-sign">
-                        </span>
-                    </a>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <p>{{item_type}}</p>
-                    <p>{{item_name}}</p>
-                    <a href="#">
-                        <img class="comp-img" src={{item_img}}>
-                    </a>
-                    <p>{{item_price}}</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href"#"
-                        <span class="glyphicon glyphicon-plus-sign">
-                        </span>
-                    </a>
-                    
-                </div>
-                
-            </div> 
-
-            <br>
-
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-minus-sign">
-                        </span>
-                    </a>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <p>{{item_type}}</p>
-                    <p>{{item_name}}</p>
-                    <a href="#">
-                        <img class="comp-img" src={{item_img}}>
-                    </a>
-                    <p>{{item_price}}</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href"#">
-                        <span class="glyphicon glyphicon-plus-sign">
-                        </span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-
-            <br>
-
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-minus-sign">
-                        </span>
-                    </a>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <p>{{item_type}}</p>
-                    <p>{{item_name}}</p>
-                    <a href="#">
-                        <img class="comp-img" src={{item_img}}>
-                    </a>
-                    <p>{{item_price}}</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-plus-sign">
-                        </span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-
-            <br>
-
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-minus-sign">
-                        </span>
-                    </a>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <p>{{item_type}}</p>
-                    <p>{{item_name}}</p>
-                    <a href="#">
-                        <img class="comp-img" src={{item_img}}>
-                    </a>
-                    <p>{{item_price}}</p>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <a href="#">
-                        <span class="glyphicon glyphicon-plus-sign">
-                        </span>
-                    </a>
-                    
-                </div>
-                
-            </div>      
-
-        </div> 
-
-      
-    </div>
     
   
 
