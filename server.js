@@ -17,8 +17,18 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
+
+app.engine("handlebars", expHand({
+	defaultLayout: "main"
+}));
+
+app.set("view engine", "handlebars")
 // Routes
 // =============================================================
+require('./routes/htmlRoutes')(app);
+// require('./routes/apiRoutes')(app);
+
+// global.db = require('./models');
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
