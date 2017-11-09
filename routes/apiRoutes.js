@@ -5,7 +5,18 @@
 // apiRoutes
 var db = require("../models");
 
+
+
 module.exports = function(app) {
+	app.post("/api/new", function(req, res) {
+		db.Sellers.create({
+			item_name: req.body.name,
+			item_type: req.body.type,
+			item_price: req.body.price
+		});
+	});
+
+
 	app.get("/api/worm", function(req, res) {
 		db.Components.findAll({
 			where: {
@@ -13,7 +24,7 @@ module.exports = function(app) {
 			}
 		}).then(function(data) {
 			res.render("index", {stuff:data});
-			
+
 
 			console.log(data);
 		})
