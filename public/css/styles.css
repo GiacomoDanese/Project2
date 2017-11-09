@@ -1,4 +1,4 @@
-body {
+/*body {
 	background-color: gray;
 }
 
@@ -18,4 +18,31 @@ body {
 .comp-img {
 	height: 50px;
 	width: 50px;
+}
+
+*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/back7.png");
+} 
+
+.navbar {
+	background-color: #004A63;
+}
+
+.navbar-text {
+	font-size: 17px;
+}
+
+.container {
+	width: 100%;
+}
+
+.card {
+	margin-top: 100px;
+	background-color: #004A63
+
 }

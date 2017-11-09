@@ -25,7 +25,7 @@ app.engine("handlebars", expHand({
 app.set("view engine", "handlebars")
 // Routes
 // =============================================================
-require('./routes/htmlRoutes')(app);
+// require('./routes/htmlRoutes')(app);
 require('./routes/apiRoutes')(app);
 
 // global.db = require('./models');

@@ -13,6 +13,7 @@ module.exports = function(app) {
 			}
 		}).then(function(data) {
 			res.render("index", {stuff:data});
+			
 
 			console.log(data);
 		})
